@@ -1,0 +1,28 @@
+{
+    "navbar": {
+        "logo": {
+            "link": "#header",
+            "logo": "LOGO",
+            "src": "../../assets/images/react.png"
+            
+        },
+        "links": [
+            {
+                "text": "About",
+                "link": "#about"
+            },
+            {
+                "text": "Projects",
+                "link": "#projects"
+            },
+            {
+                "text": "Reviews",
+                "link": "#contacts"
+            },
+            {
+                "text": "Contacts",
+                "link": "#footer"
+            }
+        ]
+    }
+}
