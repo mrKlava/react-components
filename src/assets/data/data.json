@@ -1,3 +1,16 @@
 {
-    "thiis": "is JSON"
+    "cards": [
+        {
+            "front": "front",
+            "back": "back"
+        },
+        {
+            "front": "front-2",
+            "back": "back-2"
+        },
+        {
+            "front": "front-3",
+            "back": "back-3"
+        }
+    ]
 }
