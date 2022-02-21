@@ -3,16 +3,17 @@ import React from 'react'
 function Card(props) {
   return (
     <div className="card">
-
-        <div className="card_front">
-            {props.card.front}
+      <div className="front">
+        <div className="content">
+          front
         </div>
-
-        <div className="card_back">
-            {props.card.back}
+      </div>
+      <div className="back">
+        <div className="content">
+          back
         </div>
-
-  </div>
+      </div>
+    </div>
   );
 }
 
