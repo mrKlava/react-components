@@ -1,32 +1,20 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
 import './hamburger.scss';
 
+
 function Hamburger(props) {
     
-    const [toggleHam, setToggleHam] = useState(false)
+    const isBurger = props.isBurger
 
-    console.log (`This is Hamurger: ${toggleHam}`)
-
-    console.log(props.updateHam)
-
-    useEffect(() => {
-        if (props.onChange) {
-            props.onChange(toggleHam)
-        }
-
-        if (props.updateHam) {
-            setToggleHam(false)
-            console.log('clicked link')
-        }
-
-    }, [toggleHam])
+    function handleClick() {
+        props.updateHam(!isBurger)
+    }
 
     return (
-        <div    className='hamburger'
-                className={ !toggleHam ? 'hamburger' : 'hamburger active' }
-                onClick={ ()=>setToggleHam(!toggleHam) }
-                onChange={setToggleHam}
+        <div
+                className={ !isBurger ? 'hamburger' : 'hamburger active' }
+                onClick={handleClick}
             >
             <span></span>
             <span></span>

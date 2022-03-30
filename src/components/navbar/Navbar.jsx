@@ -30,7 +30,10 @@ function Navbar(props) {
 						<NavbarLinks links={props.data.links} />{/* links */}
 					</div>
 
-					<Hamburger onChange={handleHam} updateHam={toggleMobMenu} test={'test'} />
+					<Hamburger 
+						updateHam={handleHam} 
+						isBurger={toggleMobMenu}
+						/>
 
 				</div>
 			</div>
